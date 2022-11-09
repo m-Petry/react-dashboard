@@ -24,7 +24,7 @@ const Item = ({ title, to, icon, selected, setSelected }) => {
     <MenuItem
       active={selected === title}
       style={{
-        color: colors.grey[100],
+        color: colors.grey[100]
       }}
       onClick={() => setSelected(title)}
       icon={icon}
@@ -45,20 +45,20 @@ const Sidebar = () => {
     <Box
       sx={{
         "& .pro-sidebar-inner": {
-          background: `${colors.primary[400]} !important`,
+          background: `${colors.primary[400]} !important`
         },
         "& .pro-icon-wrapper": {
-          backgroundColor: "transparent !important",
+          backgroundColor: "transparent !important"
         },
         "& .pro-inner-item": {
-          padding: "5px 35px 5px 20px !important",
+          padding: "5px 35px 5px 20px !important"
         },
         "& .pro-inner-item:hover": {
-          color: "#868dfb !important",
+          color: "#868dfb !important"
         },
         "& .pro-menu-item.active": {
-          color: "#6870fa !important",
-        },
+          color: "#6870fa !important"
+        }
       }}
     >
       <ProSidebar collapsed={isCollapsed}>
@@ -69,7 +69,7 @@ const Sidebar = () => {
             icon={isCollapsed ? <MenuOutlinedIcon /> : undefined}
             style={{
               margin: "10px 0 20px 0",
-              color: colors.grey[100],
+              color: colors.grey[100]
             }}
           >
             {!isCollapsed && (
@@ -80,7 +80,7 @@ const Sidebar = () => {
                 ml="15px"
               >
                 <Typography variant="h3" color={colors.grey[100]}>
-                  ADMINIS
+                  Admin
                 </Typography>
                 <IconButton onClick={() => setIsCollapsed(!isCollapsed)}>
                   <MenuOutlinedIcon />
@@ -104,13 +104,13 @@ const Sidebar = () => {
                 <Typography
                   variant="h2"
                   color={colors.grey[100]}
-                  fontWeight="bold"
+                  fontWeight="normal"
                   sx={{ m: "10px 0 0 0" }}
                 >
-                  Ed Roh
+                  Marcelo Petry
                 </Typography>
                 <Typography variant="h5" color={colors.greenAccent[500]}>
-                  VP Fancy Admin
+                  F&A Manager
                 </Typography>
               </Box>
             </Box>
